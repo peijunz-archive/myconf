@@ -1,0 +1,8 @@
+[user]
+	name = Peijun Zhu
+	email = zpj.ustc@gmail.com
+[core]
+	quotepath = false
+	excludesfile = /home/zpj/.gitignore_global
+[tar "tar.xz"]
+	command = xz -c

@@ -1,0 +1,6 @@
+alias up='sudo zypper dup --no-recommends --no-allow-vendor-change'
+alias se='zypper se'
+alias ref='sudo zypper ref'
+alias ins='sudo zypper in --no-recommends'
+alias rem='sudo zypper --no-refresh rm -u'
+alias op='open_command'
