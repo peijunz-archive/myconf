@@ -23,7 +23,7 @@ octave-workspace
 *.rar
 *.lof
 *~
-__*
+__pycache__/
 *.pyc
 *.nav
 *.snm

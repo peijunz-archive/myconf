@@ -11,3 +11,5 @@ repo:
 up: #Upload to remote repo
 	git commit -a -m "Updating Conf"
 	git push origin master
+jupyterfont:
+	sudo bash jupyterfont.sh
