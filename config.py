@@ -4,19 +4,21 @@
 import os
 import shutil
 
+home_path = '/home/zpj'
+
 files = (
-    {"path": "~",
+    {"path": home_path,
      "files": {
          'aliases': '.aliases',
          'astylerc': '.astylerc',
          'gitconfig': '.gitconfig',
-         'gitignore_global': '.gitconfig_global',
+         'gitignore_global': '.gitignore_global',
          'vimrc': '.vimrc',
-         'xournalpp': '.xournalpp/setting.xml',
+         'xournalpp': '.xournalpp/settings.xml',
          'xournal': '.xournal/config',
          }
      },
-     {"path": '~/.config',
+     {"path": '{}/.config'.format(home_path),
       "files": {
           'kdeglobals': 'kdeglobals',
           'kwinqtcurve': 'kwinqtcurverc',
@@ -45,16 +47,19 @@ class Config:
                 yield bak, "{}/{}".format(path, src)
     @staticmethod
     def backup():
-        for bak, src in self.allfiles():
-            shutil.copy(src, bak)
+        for bak, src in Config.allfiles():
+            try:
+                shutil.copy(src, bak)
+            except FileNotFoundError:
+                print("{} does not exist".format(src))
     @staticmethod
     def restore():
-        for bak, src in self.allfiles():
+        for bak, src in Config.allfiles():
             shutil.copy(bak, src)
 
 
 #repo_file = 'openSUSE.repo'
 #execute = 
 if __name__ == "__main__":
-    for bak, src in Config.allfiles():
-        print(bak, src)
+    Config.backup()
+    #Config.restore()
