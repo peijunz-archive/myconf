@@ -1,0 +1,48 @@
+[CompactMode]
+FontWeight=50
+
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[DetailsMode]
+FontWeight=50
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+GlobalViewProps=true
+Version=200
+ViewPropsTimestamp=2017,12,19,3,47,59
+
+[IconsMode]
+FontWeight=50
+IconSize=128
+MaximumTextLines=3
+PreviewSize=112
+
+[KPropertiesDialog]
+Height 1080=550
+Width 1920=478
+
+[MainWindow]
+Height 1080=1001
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAADmvwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAQA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAABPAAADmgAAADwA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAABAD///8AAAADAAAHgAAAASr8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAHgAAAAAQA////AAAGwgAAA5oAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=1920
+Window-Maximized 1080x1920=true
+
+[Open-with settings]
+CompletionMode=5
+History=qtcreator
+
+[PreviewSettings]
+Plugins=djvuthumbnail,marble_thumbnail_shp,exrthumbnail,marble_thumbnail_gpx,marble_thumbnail_geojson,htmlthumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,imagethumbnail,fontthumbnail,directorythumbnail,textthumbnail,comicbookthumbnail,ffmpegthumbs,audiothumbnail
+
+[SettingsDialog]
+Height 1080=566
+Width 1920=551
+
+[ViewPropertiesDialog]
+Height 1080=372
+Width 1920=353

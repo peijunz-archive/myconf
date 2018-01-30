@@ -1,0 +1,172 @@
+#Xournal 配置文件。
+#在保存首选项中设置后自动生成此配置文件。
+#
+
+[general]
+#显示器分辨率，像素点/英寸
+display_dpi=96.00
+#初始化当前缩放级别
+initial_zoom=155.80
+#以窗口最大化启动(是/否)
+window_maximize=true
+#以全屏模式启动(是/否)
+window_fullscreen=false
+#窗口宽度像素(非最大化)
+window_width=1000
+#窗口高度像素
+window_height=700
+#滚动条增量(像素)
+scrollbar_speed=30
+#缩放对话框增量
+zoom_dialog_increment=1
+#放大/缩小倍数因子
+zoom_step_factor=1.500
+# continuous view (false = one page, true = continuous, horiz = horizontal)
+view_continuous=true
+#使用XInput扩展(是/否)
+use_xinput=true
+#丢弃XInput模式下核心指针事件(是/否)
+discard_corepointer=false
+# ignore events from other devices while drawing (true/false)
+ignore_other_devices=true
+# do not worry if device reports button isn't pressed while drawing (true/false)
+ignore_btn_reported_up=true
+#总是将橡皮擦提示映射到橡皮擦(是/否)
+use_erasertip=true
+# always map touchscreen device to hand tool (true/false) (requires separate pen and touch devices)
+touchscreen_as_hand_tool=true
+# disable touchscreen device when pen is in proximity (true/false) (requires separate pen and touch devices)
+pen_disables_touch=true
+# name of touchscreen device for touchscreen_as_hand_tool
+touchscreen_device_name=Wacom HID 50F8 Finger touch
+#按钮2和3切换映射替代绘图(对于一些笔记是有用的)(是/否)
+buttons_switch_mappings=false
+# fix origin of strokes (devices with unreliable button press coordinates, e.g. Lenovo's AES pens) (true/false)
+fix_stroke_origin=false
+#自动加载 文件名.pdf.xoj 替代 文件名.pdf (是/否)
+autoload_pdf_xoj=false
+# when attempting to open a non-existent file, treat it as a new file (true/false)
+autocreate_new_xoj=false
+# enable periodic autosaves (true/false)
+autosave_enabled=false
+# delay for periodic autosaves (in seconds)
+autosave_delay=5
+#打开/保存默认路径(当前目录保留空白)
+default_path=/home/zpj/code/stat-physics
+#使用压力敏感度来控制笔划宽度(是/否)
+pressure_sensitivity=true
+#最小宽度倍增
+width_minimum_multiplier=0.00
+#最大宽度倍增
+width_maximum_multiplier=1.25
+#从上至下接口组件
+#有效值：drawarea menu main_toolbar pen_toolbar statusbar
+interface_order=menu main_toolbar pen_toolbar drawarea statusbar
+#全屏模式下从上至下接口组件
+interface_fullscreen=main_toolbar pen_toolbar drawarea
+#左侧有滚动条的接口(是/否)
+interface_lefthanded=false
+#隐藏一些不需要的菜单项或工具条项(是/否)
+shorten_menus=false
+#隐藏接口项(自定义自己的风险！)
+#查看源码文件xo-interface.c 找项目名列表
+shorten_menu_items=optionsProgressiveBG optionsLeftHanded optionsButtonSwitchMapping
+#高亮不透明度(0 修改 1，默认0.5)
+#警告：不透明度级别不会保存到xoj文件中！
+highlighter_opacity=0.50
+#退出自动保存首选项(是/否)
+autosave_prefs=true
+#强制通过cairo进行PDF着色(缓慢而细致)(是/否)
+poppler_force_cairo=false
+# prefer xournal's own PDF code for exporting PDFs (true/false)
+exportpdf_prefer_legacy=false
+# export successive layers on separate pages in PDFs (true/false)
+exportpdf_layers=false
+
+[paper]
+#默认页面宽度，用点表示(1/72 in)
+width=612.00
+#默认页面高度，用点表示(1/72 in)
+height=792.00
+#默认页面颜色
+color=white
+#默认页面风格(简易、条纹、划线或图形)
+style=lined
+#将页面风格更改应用到所有页(是/否)
+apply_all=false
+#首选单位(cm, in, px, pt)
+default_unit=cm
+#打印或导出PDF文件时包含页面规则(是/否)
+print_ruling=true
+# when creating a new page, duplicate a PDF or image background instead of using default paper (true/false)
+new_page_duplicates_bg=false
+#及时更新页面背景(是/否)
+progressive_bg=true
+#PS/PDF背景位图分辨率着色使用ghostscript脚本(dpi)
+gs_bitmap_dpi=144
+#使用libgnomeprint打印时PDF背景位图分辨率(dpi)
+pdftoppm_printing_dpi=150
+
+[tools]
+# selected tool at startup (pen, eraser, highlighter, selectregion, selectrect, vertspace, hand, image)
+startup_tool=pen
+# Use the pencil from cursor theme instead of a color dot (true/false)
+pen_cursor=false
+#默认笔颜色
+pen_color=blue
+#默认笔厚度(细小=1，中等=2，粗的=3)
+pen_thickness=2
+#标尺模式下默认笔(是/否)
+pen_ruler=false
+#图形识别模式下默认笔(是/否)
+pen_recognizer=false
+#默认橡皮厚度(细小=1，中等=2，粗的=3)
+eraser_thickness=2
+#默认橡皮模式(标准=0，乳白=1，笔划=2)
+eraser_mode=2
+#默认高亮颜色
+highlighter_color=yellow
+#默认高亮厚度(细小=1，中等=2，粗的=3)
+highlighter_thickness=2
+#标尺模式下默认高亮(是/否)
+highlighter_ruler=false
+#图形识别模式下默认高亮(是/否)
+highlighter_recognizer=false
+# button 2 tool (pen, eraser, highlighter, text, selectregion, selectrect, vertspace, hand, image)
+btn2_tool=selectrect
+#将按钮2刷子连接至主刷(是/否)(重载所有设置)
+btn2_linked=true
+#按钮2刷子色彩(仅针对笔或高亮)
+btn2_color=white
+#按钮2刷子厚度(仅针对笔、橡皮或高亮)
+btn2_thickness=0
+#标尺模式下按钮2(是/否)(仅针对笔或高亮)
+btn2_ruler=false
+#图形识别模式下按钮2(是/否)(仅针对笔或高亮)
+btn2_recognizer=false
+#按钮2擦除模式(仅针对橡皮)
+btn2_erasermode=2
+# button 3 tool (pen, eraser, highlighter, text, selectregion, selectrect, vertspace, hand, image)
+btn3_tool=selectregion
+#将按钮3刷子连接到主刷(是/否)(重载所有设置)
+btn3_linked=true
+#按钮3刷子色彩(仅针对笔或高亮)
+btn3_color=white
+#按钮3刷子厚度(仅针对笔、橡皮或高亮)
+btn3_thickness=0
+#标尺模式下按钮3(仅针对笔或高亮)
+btn3_ruler=false
+#图形识别模式下按钮3(是/否)(仅针对笔或高亮)
+btn3_recognizer=false
+#按钮3擦除模式(仅擦除)
+btn3_erasermode=2
+#不同笔的厚度(用点表示，1pt = 1/72 in)
+pen_thicknesses=0.42;0.85;1.41;2.26;5.67
+#不同橡皮的厚度(用点表示，1pt = 1/72 in)
+eraser_thicknesses=2.83;8.50;19.84
+#不同高亮的厚度(用点表示，1pt = 1/72 in)
+highlighter_thicknesses=2.83;8.50;19.84
+#默认字体名
+default_font=Sans
+#默认字体大小
+default_font_size=12.0
