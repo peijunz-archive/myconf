@@ -3,40 +3,7 @@
 
 import os
 import shutil
-
-home_path = '/home/zpj'
-
-files = (
-    {"path": home_path,
-     "files": {
-         'aliases': '.aliases',
-         'astylerc': '.astylerc',
-         'gitconfig': '.gitconfig',
-         'gitignore_global': '.gitignore_global',
-         'vimrc': '.vimrc',
-         'xournalpp': '.xournalpp/settings.xml',
-         'xournal': '.xournal/config',
-         }
-     },
-     {"path": '{}/.config'.format(home_path),
-      "files": {
-          'kdeglobals': 'kdeglobals',
-          'kwinqtcurve': 'kwinqtcurverc',
-          'kwin': 'kwinrc',
-          'kwinrules': 'kwinrulesrc',
-          'okularpart': 'okularpartrc',
-          'katepart': 'katepartrc',
-          'konsole': 'konsolerc',
-          'krunner': 'krunnerrc',
-          'plasmashell': 'plasmashellrc',
-          'kservicemenu': 'kservicemenurc',
-          'kate': 'katerc',
-          'dolphin': 'dolphinrc',
-          'texstudio': 'texstudio/texstudio.ini',
-          'gitk':'git/gitk',
-          }
-      }
-      )
+from backupconf import *
 
 class Config:
     @staticmethod
@@ -44,7 +11,7 @@ class Config:
         for group in files:
             path = group["path"]
             for bak, src in group["files"].items():
-                yield bak, "{}/{}".format(path, src)
+                yield "{}/{}".format(back_path, bak), "{}/{}".format(path, src)
     @staticmethod
     def backup():
         for bak, src in Config.allfiles():
