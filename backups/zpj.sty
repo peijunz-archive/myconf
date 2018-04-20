@@ -1,10 +1,15 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesPackage{zpj}
-%\usepackage[hyperref,UTF8,fontset=windows]{ctex}
+\newif\if@loadctex\@loadctexfalse
+\DeclareOption{ctex}{\@loadctextrue}
+\ProcessOptions
+\if@loadctex
+  \usepackage[hyperref,UTF8,fontset=windows]{ctex}
+\fi
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{verbatim}
-\usepackage[svgnames,dvipsnames,x11names]{xcolor}
+%\usepackage[svgnames,dvipsnames,x11names]{xcolor}
 \usepackage{paralist}%行间列表compactenum
 \usepackage{graphicx}%图片嵌入
 %\usepackage[hypcap=true]{caption}
@@ -22,6 +27,7 @@
 \newcommand{\lhs}{\mathrm{LHS}}
 \newcommand{\nl}{\\&\qquad}%公式换行
 \newcommand{\mdef}{\overset{\mathrm{def}}{=}}
+\DeclareMathOperator{\diag}{diag}
 \DeclareMathOperator{\sgn}{sgn}
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\tr}{tr}
