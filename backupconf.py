@@ -14,6 +14,10 @@ files = (
          'xournal': '.xournal/config',
          }
      },
+     {"path":"/home/zpj/texmf/tex/latex/zpj",
+      "back":back_path,
+      "files":{"zpj.sty":"zpj.sty"}
+     },
      {"path": '{}/.config'.format(home_path),
       "back": back_path,
       "files": {

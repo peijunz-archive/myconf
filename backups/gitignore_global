@@ -32,3 +32,4 @@ __*
 *.lot
 *.loa
 *.blg
+.ipynb_checkpoints/
