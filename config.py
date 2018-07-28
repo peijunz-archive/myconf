@@ -22,7 +22,10 @@ class Config:
     @staticmethod
     def restore():
         for bak, src in Config.allfiles():
-            shutil.copy(bak, src)
+            try:
+                shutil.copy(bak, src)
+            except FileNotFoundError:
+                print("{} does not exist".format(bak))
 
 
 #repo_file = 'openSUSE.repo'

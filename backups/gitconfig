@@ -4,5 +4,6 @@
 [core]
 	quotepath = false
 	excludesfile = /home/zpj/.gitignore_global
+	editor = vim
 [tar "tar.xz"]
 	command = xz -c

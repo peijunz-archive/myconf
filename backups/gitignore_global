@@ -33,3 +33,4 @@ __*
 *.loa
 *.blg
 .ipynb_checkpoints/
+.pytest_cache/

@@ -21,6 +21,7 @@ files = (
      {"path": '{}/.config'.format(home_path),
       "back": back_path,
       "files": {
+          'nvim': 'nvim/init.vim',
           'kdeglobals': 'kdeglobals',
           'kwinqtcurve': 'kwinqtcurverc',
           'kwin': 'kwinrc',
