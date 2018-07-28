@@ -52,7 +52,7 @@ autosave_enabled=false
 # delay for periodic autosaves (in seconds)
 autosave_delay=5
 #打开/保存默认路径(当前目录保留空白)
-default_path=/home/zpj/code/stat-physics
+default_path=
 #使用压力敏感度来控制笔划宽度(是/否)
 pressure_sensitivity=true
 #最小宽度倍增

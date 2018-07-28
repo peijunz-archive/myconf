@@ -153,7 +153,6 @@ History Items[$e]=file:$HOME/touch,file:$HOME/touch
 [General]
 ColorScheme=Norway
 Name=Breeze
-dbfile=/home/zpj/.mozilla/firefox/dh77sk6e.default/places.sqlite
 fixed=Source Code Pro,14,-1,5,50,0,0,0,0,0,Regular
 font=Noto Sans SC,14,-1,5,50,0,0,0,0,0,Regular
 menuFont=Noto Sans SC,14,-1,5,50,0,0,0,0,0,Regular
